@@ -91,7 +91,7 @@ var ie = (function() {
       window.path + 'libs/caja-html-sanitizer-minified.js',
       window.path + 'libs/moment/twix.js',
       window.path + 'libs/Sortable.js',
-
+      '//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css',
       window.path + 'libs/cropperjs/cropperjs.js',
       window.path + 'libs/cropperjs/cropper.css',
       //because we have jimu/dijit/GridLayout dijit, so we import this css here
@@ -149,6 +149,9 @@ var ie = (function() {
       }, {
         name: "dynamic-modules",
         location: "dynamic-modules"
+      }, {
+          name: "bootstrap",
+          location: "//rawgit.com/xsokev/Dojo-Bootstrap/master"
       }];
 
       resources.push(window.apiUrl + '/dojo/dojo.js');
@@ -172,6 +175,9 @@ var ie = (function() {
       }, {
         name: "configs",
         location: window.path + "configs"
+      }, {
+          name: "bootstrap",
+          location: "//rawgit.com/xsokev/Dojo-Bootstrap/master"
       }];
 
       resources.push(window.apiUrl + 'init.js');
